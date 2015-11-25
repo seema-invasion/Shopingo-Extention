@@ -1,0 +1,16 @@
+{
+  "title": "Shopping Post",
+  "name": "posttheproduct",
+  "version": "0.1.0",
+  "description": "Post a product from online store",
+  "main": "index.js",
+  "author": "Chandni Jaiswal",
+  "permissions": {
+    "cross-domain-content": ["http://code-b.in/projects/shoppingpost/*"]
+  },
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT"
+}

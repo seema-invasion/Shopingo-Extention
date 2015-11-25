@@ -1,0 +1,37 @@
+{    
+	"browser_action": {
+    "default_icon":"images/Trophy.png",
+    "default_title": "Save the product image from online stores"
+  },
+
+  "content_scripts": [ {
+    "js": [ "js/jquery.min.js", "js/jquery-ui.js","js/products.js", "content.js"],
+    "css": ["js/jquery-ui.css"],
+    "matches":["http://www.flipkart.com/*","https://www.flipkart.com/*","https://www.snapdeal.com/*","http://www.snapdeal.com/*","http://www.amazon.in/*","https://www.amazon.in/*",
+    "http://www.shopclues.com/*","http://www.jabong.com/*","https://www.jabong.com/*","http://code-b.in/projects/shoppingpost/*"]
+  }],
+
+  "icons":{
+    "128": "images/Trophy.png"
+  },
+  
+  "description": "Post a product from online store",
+  "manifest_version": 2,
+  "name": "Post the product",
+  "version": "0.7",
+  "author": "Chandni Jaiswal",
+  "web_accessible_resources": ["images/Trophy.png","images/Trophy-pin.png"],
+
+  "permissions" : [
+    "activeTab",
+    "tabs",
+    "contextMenus",
+    "http://*/*"
+  ],
+
+  "background": {
+    "persistent": false,
+    "scripts": ["js/products.js", "background.js", "js/jquery.min.js", "js/jquery-ui.js"]
+  }
+
+}
